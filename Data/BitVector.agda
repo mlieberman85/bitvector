@@ -20,6 +20,9 @@ bitwise-and = zipWith _∧_
 bitwise-or : ∀ {n} → Op₂ (BitVector n)
 bitwise-or = zipWith _∨_
 
+bitwise-xor : ∀ {n} → Op₂ (BitVector n)
+bitwise-xor = zipWith _xor_
+
 half-adder : Bit → Bit → Bit × Bit
 half-adder x y = x xor y , x ∧ y
 
